@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>STRING METHODS():</h1>
+        <h3>STRING TYPE LENGHT:</h3>
+        <P id="task1"></P>
+       <h3>STRING TYPE SLICE():</h3>  
+     <p id="task2"></p>
+     <h3>STRING TYPE TOUPPERCASE():</h3>
+     <p id="task3"></p>
+     <H3>STRING TYPE SUBSTRING():</H3>
+     <P id="task4"></P>
+     <H3>STRING TYPE REPLACE():</H3>
+     <P id="task6"></P>
+<br>
+<h1>ARRRAY METHODS():</h1>
+<h3>ARRAY SHIFT():</h3>
+<p id="method1"></p>
+<p id="method2"></p>
+<h3>ARRAY LENGHT():</h3>
+<P id="method4"></P>
+<h3>ARRAY SLICE():</h3>
+<P id="demo"></P>
+<h3>ARRAY JOIN():</h3>
+<P id="demo1"></P>
+<h3>ARRAY POP():</h3>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<h1>ARRAY OBJECT METHOD():</h1>
+<P id="demo4"></P>
+  <script>
+            let text= "JAVASCRIPT IS ARE SCRIPTING LANGUAGES THIS USED FOR WEB DEVELOPMENT";
+            document.getElementById("task1").innerHTML= text.length;
+"<br>"
+let text3="JAVASCRIPT IS ARE SCRIPTING LANGUAGES THIS USED FOR WEB DEVELOPMENT";
+document.getElementById("task2").innerHTML= text3.slice(2,5);
+"<br>"
+let text4="JAVASCRIPT IS ARE SCRIPTING LANGUAGES THIS USED FOR WEB DEVELOPMENT";
+document.getElementById("task3").innerHTML= text4.toUpperCase();
+"<br>"
+let text5="HELLO WORLD";
+document.getElementById("task4").innerHTML= text5.substring(2,9);
+"<br>"
+let text6= "W3SCHOOL facebook";
+ let text7= text6.replace("W3Schools","FACEBOOK")
+document.getElementById("task6").innerHTML= text7;
+"<br>"
+let fruits=["apple","orange","mango","bannna"];
+document.getElementById("method1").innerHTML= fruits; 
+fruits.pop();
+document.getElementById("method2").innerHTML =fruits;
+"<br>"
+const myboys=["raju","vijay"];
+const mygirls=["ramiya","keetha","rani","sundhari"];
+const mychildren=mygirls.concat(myboys);
+document.getElementById("method4").innerHTML= mychildren;
+"<br>"
+let text10 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+let world = text10.slice(1);
+document.getElementById("demo").innerHTML = text10 + "<br><br>" + world;
+"<br>"
+let text11=["hello world", "this javascript method."];
+text11=text11.join ("and");
+document.getElementById("demo1").innerHTML=text11;
+"<br>"
+let text12=["goodmorning","goodevening","goodnight"];
+document.getElementById("demo2").innerHTML=text12;
+text12=text12.pop();
+document.getElementById("demo3").innerHTML=text12;
+"<br>"
+let person={name:"rahul",age:"18",mothername:"dhivya",fathername:"gownitha",regno:"22506052",city:"thanjavur",};
+document.getElementById("demo4").innerHTML="person"+person.mothername;
+</script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(139, 18, 18); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:chocolate;
+  overflow: hidden;
+  height: auto;
+}
+</style>
+</head>
+<body>
+  
+<h2>Accordion</h2>
+<div class="flex-container"></div>
+<div><i class="fa-regular fa-chevron-down"></i></div>
+<button class="accordion">THANJAVUR</button>
+<div class="panel">
+  <p>Brihadishvara Temple, called Rajarajesvaram Lord of Rajaraja') by its builder, 
+    and known locally as Thanjai Periya Kovil Thanjavur Big Temple') and Peruvudaiyar Kovil,
+     is a Shaivite[3][4] Hindu temple built in a Chola architectural style[5] 
+     located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India.
+      It is one of the largest Hindu temples and an exemplar of Tamil architecture.
+       It is also called Dakshina Meru (Meru of the South).[8] 
+       Built by Chola emperor Rajaraja I between 1003 and 1010 CE,
+        the temple is a part of the UNESCO World Heritage Site known as the "Great Living Chola Temples
+     which are about 70 kilometres (43 mi) and 40 kilometres (25 mi) to its northeast respectively</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

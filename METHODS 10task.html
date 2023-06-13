@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>STRING METHODS:</h2>
+        <h3>FIND THE HIGHEST NUMBER():</h3>
+        <P id="demo1"></P>
+        <h3>FIND THE NUMBERS IN ARRAY():</h3>
+        <P id="demo2"></P>
+        <h3>FIND THE USING LENGTH():</h3>
+        <P id="demo3"></P>
+        <h3>FIND THE pop METHOD():</h3>
+        <P id="demo5"></P>
+        <p id="demo6"></p>
+        <h3>FIND THE PUSH METHOD():</h3>
+        <P id="demo7"></P>
+        <P id="demo8"></P>
+        <h3>FIND THE UNSHIFT METHOD():</h3>
+<P id="demo9"></P>    
+<P id="demo10"></P> 
+<h3>FIND THE SHIFT METHOD():</h3>
+<P id="demo11"></P>    
+<P id="demo12"></P> 
+<h3>FIND THE indexOf METHOD():</h3>
+<P id="demo13"></P>     
+<h3>FIND THE SPLICE METHOD():</h3>
+<p id="demo14"></p>
+<h3>FIND THE JOIN METHOD():</h3>
+<p id="demo15"></p>
+<br>
+<h1>ARRAY OBJECTS():</h1>
+<P id="demo"></P>
+<P id="demo1"></P>
+</body>
+    <script>
+      document.getElementById("demo1").innerHTML=Math.max(100,50);
+"<br>"
+ let math=[11,12,13];
+ text10 =math[0]+math[1]+math[2];
+ document.getElementById("demo2").innerHTML= text10;
+ "<Br>"
+let text2=["ramu","ajay","vijay",];
+let size= text2.length;
+document.getElementById("demo3").innerHTML=size;
+"<br>"
+let text4=["red","yellow","green","white","black"];
+document.getElementById("demo5").innerHTML=text4;
+text4.pop();
+document.getElementById("demo6").innerHTML=text4;
+"<br>"
+let text5=["tiger","lion","blacktiger","elephant"];
+document.getElementById("demo7").innerHTML=text5;
+text5.push("panda");
+document.getElementById("demo8").innerHTML=text5;
+    "<br>"
+    let text6=["facebook","twitter","instagram"];
+    document.getElementById("demo9").innerHTML=text6;
+    text6.unshift();
+    document.getElementById("demo10").innerHTML=text6;
+    "<br>"
+    let text7=["bilcates","ambani","elon mask"];
+    document.getElementById("demo11").innerHTML=text7;
+    text7.shift();
+    document.getElementById("demo12").innerHTML=text7;
+    "<br>"
+    let text="hello world,i am roboat.";
+    let result= text.indexOf("roboat");
+    document.getElementById("demo13").innerHTML=result;
+    "<br>"
+    let text8=["apple","mango","orange"];
+    // At position 2, add 2 elements: 
+    text8.splice(2,0,"strbery","jelly");
+    document.getElementById("demo14").innerHTML=text8;
+    "<br>"
+    let text9=["hello world","i am roboat"];
+    text9= text9.join("thank you");
+    document.getElementById("demo15").innerHTML=text9;
+    "<br>"
+let vijay={name:"raju",age:"19",city:"thanjavur",Fathername:"srinivasn",mothername:"kannaki",gender:"male"}
+document.getElementById("demo").innerHTML="my details" + vijay.Fathername;
+    </script>
+</html>

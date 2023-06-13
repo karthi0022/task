@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            position: relative;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            animation-fill-mode: backwards;
+            animation-fill-mode: top;
+            -ms-zoom-animation: 50px;
+
+        }
+
+        @keyframes example {
+            0% {
+                background-color: green;
+                left: 300px;
+                top: 100px;
+            }
+
+            25% {
+                background-color: blueviolet;
+                left: 500px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: orangered;
+                left: 600px;
+                top: 150px;
+            }
+
+            50% {
+                background-color: red;
+                left: 2px;
+                top: 100px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+                top: 100px;
+            }
+
+            125% {
+                background-color: yellow;
+                left: 300px;
+                top: 200px;
+            }
+
+            150% {
+                background-color: antiquewhite;
+                left: 300px;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS ANIMATION</h1>
+    <div></div>
+    <p><b>NOTE:</b><br>when the animation is finished,it gose back to its orignal style.</p>
+</body>
+
+</html>
